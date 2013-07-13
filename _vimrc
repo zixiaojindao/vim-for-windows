@@ -41,23 +41,34 @@ let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
 nmap tl :Tlist<cr>
 
-let g:winManagerWindowLayout='FileExplorer'
-nmap wm :WMToggle<cr>
+"let g:winManagerWindowLayout='FileExplorer'
+"nmap wm :WMToggle<cr>
 
+"minibuffer
 let g:miniBufExplMapCTabSwitchBufs=1
-let g:miniBufExplMapWindowNavVim=1
 let g:miniBufExplorerMoreThanOne = 0
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1 
 
 "let g:SuperTabRetainCompletionType=2
 "let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 
 "python
-let g:pydiction_location = 'C:/Program Files (x86)/Vim/vimfiles/ftplugin/pydiction/complete-dict' 
+let g:pydiction_location = '$VIMRUNTIME/../vimfiles/ftplugin/pydiction/complete-dict'
 let g:python_highlight_all = 1
 
 "NERD_commenter
 let mapleader=","
 
+"NERDTree
+nmap nt :NERDTreeToggle<CR>
+
+"Calendar
+nmap ca :Calendar<CR>
+
+"diff
 set diffexpr=MyDiff()
 function MyDiff()
   let opt = '-a --binary '
@@ -90,6 +101,7 @@ else
 endif
 autocmd BufEnter * lcd %:p:h
 
+"ctags & cscope
 map <F12> :call Do_CsTag()<CR>
 function Do_CsTag()
     let dir = getcwd()
