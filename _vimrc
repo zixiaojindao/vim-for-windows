@@ -55,6 +55,9 @@ let g:miniBufExplorerMoreThanOne = 0
 let g:pydiction_location = 'C:/Program Files (x86)/Vim/vimfiles/ftplugin/pydiction/complete-dict' 
 let g:python_highlight_all = 1
 
+"NERD_commenter
+let mapleader=","
+
 set diffexpr=MyDiff()
 function MyDiff()
   let opt = '-a --binary '
