@@ -8,6 +8,7 @@
 * supertab: tab键自动补全
 * taglist: 快捷键tl
 * ctags & cscope: F12生成tags and cscope需要的文件
+    * 已经在$VIM/tags添加了c++的标准库tags
 * NERD\_comment: header为","
     * ,ca，在可选的注释方式之间切换，比如C/C++ 的块注释/\* \*/和行注释//
     * ,cc，注释当前行
@@ -18,3 +19,4 @@
 * Calendar: 快捷键ca,按住<Up>, <Down>切换年份，<Left>, <Right>切换月份。
 * xml.vim, html.vim: 提供xml, html的快速编辑。
 * python语法，自动补全
+* 编译c,c++:下载mingw,添加mingw的bin目录到path，<F5>可以编译单文件,<F6>可以make
