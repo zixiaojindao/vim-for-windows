@@ -16,7 +16,7 @@
     * ,cs，以”性感”的方式注释
     * ,cA，在当前行尾添加注释符，并进入Insert模式
     * ,cu，取消注释
-* Calendar: 快捷键ca,按住<Up>, <Down>切换年份，<Left>, <Right>切换月份。
+* Calendar: 快捷键ca,按住&lt;Up&gt;, &lt;Down&gt;切换年份，&lt;Left&gt;, &lt;Right&gt;切换月份。
 * xml.vim, html.vim: 提供xml, html的快速编辑。
 * python语法，自动补全
-* 编译c,c++:下载mingw,添加mingw的bin目录到path，<F5>可以编译单文件,<F6>可以make
+* 编译c,c++:下载mingw,添加mingw的bin目录到path，&lt;F5&gt;可以编译单文件,&lt;F6&gt;可以make
