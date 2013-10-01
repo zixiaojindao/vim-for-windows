@@ -17,7 +17,6 @@ set nocompatible
 set history=50
 syntax enable
 syntax on
-
 set hlsearch
 "if has("vms")
 "	set nobackup
@@ -44,6 +43,16 @@ nmap tl :Tlist<cr>
 "let g:winManagerWindowLayout='FileExplorer'
 "nmap wm :WMToggle<cr>
 
+" OmniCppComplete
+let OmniCpp_NamespaceSearch = 1
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 " 显示函数参数列表
+let OmniCpp_MayCompleteDot = 1   " 输入 .  后自动补全
+let OmniCpp_MayCompleteArrow = 1 " 输入 -> 后自动补全
+let OmniCpp_MayCompleteScope = 1 " 输入 :: 后自动补全
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+
 "minibuffer
 let g:miniBufExplMapCTabSwitchBufs=1
 let g:miniBufExplorerMoreThanOne = 0
@@ -54,7 +63,7 @@ let g:miniBufExplModSelTarget = 1
 
 "let g:SuperTabRetainCompletionType=2
 "let g:SuperTabDefaultCompletionType="<C-X><C-O>"
-
+let g:neocomplcache_enable_at_startup = 1 
 "python
 let g:pydiction_location = '$VIMRUNTIME/../vimfiles/ftplugin/pydiction/complete-dict'
 let g:python_highlight_all = 1
@@ -160,3 +169,4 @@ function Do_CsTag()
 endfunction
 
 set nobackup
+:highlight Pmenu guibg=black
