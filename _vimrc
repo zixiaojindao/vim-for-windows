@@ -78,6 +78,9 @@ nmap nt :NERDTreeToggle<CR>
 "Calendar
 nmap ca :Calendar<CR>
 
+"highlight
+set cursorline
+nnoremap cul :set cursorline!<CR>
 "diff
 set diffexpr=MyDiff()
 function MyDiff()
