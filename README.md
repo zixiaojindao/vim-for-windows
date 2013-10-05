@@ -1,3 +1,6 @@
+###停止更新
+适用于windows和linux的vim配置请参考[vimconfig](https://github.com/zixiaojindao/vimconfig)
+本版本库弃用
 ###安装方法
 * copy所有文件，目录到vim安装根目录下，覆盖所有存在文件。
 * 增加tools目录到环境变量Path。
